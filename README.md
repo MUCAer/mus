@@ -1,4 +1,4 @@
-# DemoServer
+# UserServer
 =========
 [![UnitTest](https://github.com/MachinePlay/DemoServer/actions/workflows/docker-image.yml/badge.svg)](https://github.com/MachinePlay/DemoServer/actions/workflows/docker-image.yml)
 
@@ -12,6 +12,26 @@ C++的依赖管理一直以来是一个问题，项目使用CMake管理依赖，
 # 高版本GCC
 使用GCC10起步，利用新特性和编译器优化能力。
 
+# 服务说明
+mus, 即mad user service, 是基础的用户中心服务代码, 承载最基础的用户注册、查询、状态变更等工作  
+
+# 快速开始
+- 服务编译
+```
+cmake .. 
+make -j8
+make mus-tar
+make mus-upload
+```
+- 服务发布
+
+
+- 服务变更
+
+- 服务性能
+
+
+# 服务架构
 
 # 服务目录树
 - C++缺少好的依赖管理和组件化工具，我们用CMake做代码管理，DIY
